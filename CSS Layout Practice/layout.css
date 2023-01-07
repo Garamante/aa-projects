@@ -1,0 +1,172 @@
+* {
+  font-family: Avenir, sans-serif;
+  font-size: 1em;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+form {
+  width: 30%;
+  margin: 0 auto;
+}
+
+input[type='date'] {
+  font-size: 11px;
+}
+
+input {
+  text-align: left;
+}
+
+select {
+  font-size: 11px;
+  padding: 1.5px 9px;
+}
+
+.lg > p {
+  font-size: 12.5px;
+  margin: 8px 0px;
+}
+
+fieldset {
+  background-color: rgb(249, 249, 249);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(9, 50px);
+  grid-template-areas:
+    'fn fn'
+    'ln ln'
+    'em em'
+    'st dt'
+    'lg lg'
+    'cm cm'
+    'cm cm'
+    'ag ag2'
+    'sb sb';
+}
+
+legend {
+  text-align: left;
+  padding: 0px 10px;
+  margin-left: 50px;
+  border: 1px solid #000;
+}
+
+input:focus {
+  outline: 3px solid gold;
+}
+
+.fn {
+  grid-area: fn;
+}
+
+.fn label {
+  display: block;
+}
+
+.ln {
+  grid-area: ln;
+}
+
+.ln label {
+  display: block;
+}
+
+.em {
+  grid-area: em;
+}
+
+.em label {
+  display: block;
+}
+
+.st {
+  grid-area: st;
+  justify-self: end;
+  padding-right: 10px;
+}
+
+.st label {
+  display: block;
+}
+
+.dt {
+  grid-area: dt;
+  justify-self: start;
+}
+
+.dt label {
+  display: block;
+}
+
+.lg {
+  grid-area: lg;
+  font-size: 15px;
+}
+
+.cm {
+  grid-area: cm;
+  margin-top: 10px;
+}
+
+.cm textarea {
+  width: 200px;
+  height: 60px;
+  text-align: left;
+}
+
+.cm textarea:focus {
+  outline: 3px solid gold;
+}
+
+.cm label {
+  display: block;
+  padding-right: 100px;
+}
+
+.inputcheckbox {
+  transform: scale(1.5);
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.ag {
+  grid-area: ag;
+  justify-self: right;
+  width: 100px;
+  display: table;
+}
+
+.ag > label {
+  font-size: 12px;
+  text-align: left;
+  vertical-align: top;
+  display: table-cell;
+}
+
+.ag2 {
+  grid-area: ag2;
+  justify-self: left;
+  width: 100px;
+  display: table;
+}
+
+.ag2 > label {
+  font-size: 12px;
+  vertical-align: top;
+  display: table-cell;
+}
+
+.sb {
+  grid-area: sb;
+}
+
+.sb > button {
+  width: 120px;
+}
+
+.sb > button:hover {
+  background-color: gold;
+}
