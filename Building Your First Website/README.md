@@ -1,2 +1,2 @@
 # first-branch
-Exercice création site pour Open App Academy
+Exercice création de site pour Open App Academy
