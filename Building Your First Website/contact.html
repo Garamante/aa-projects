@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Building your first website" />
+    <meta name="keywords" content="HTML, CSS" />
+    <meta name="author" content="Huzz#alt9812" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_contact.css" />
+    <title>Building your first website</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+            <ul class="nav__links">
+              <li class="home"><a class="nav__link" href="index.html">Page 1</a></li>
+              <li class="work"><a class="nav__link" href="work.html">Page 3</a></li>
+              <li class="curri"><a class="nav__link" href="curri.html">Page 4</a></li>
+            </ul>
+          </nav>
+        <img src="work.jpg" alt="Image entete" />
+        <button class="contact"><a href="contact.html">Page 2</a></button>
+      </header>
+      <div class="page">
+        <div class="title">
+          <h1 class="selected">Contact Me</h1>
+        </div>
+        <div class="page-content">
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Contact form</legend>
+                    <table>
+                        <tr>
+                            <td><label for="firstName">Firstname</label></td>
+                            <td><input type="text" name="fistname" id="firstname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastname">Lastname</label></td>
+                            <td><input type="text" name="lastname" id="lastname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" name="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="news"><label for="newsletter">Subscribe to newsletter<input type="checkbox" name="news" id="news"></label></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><label for="comment">Your comment</label><textarea name="comment" id="comment" cols="30" rows="10"></textarea></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

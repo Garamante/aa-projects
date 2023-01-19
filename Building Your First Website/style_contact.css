@@ -1,0 +1,232 @@
+body {
+  background-color: #3a3939;
+  margin-top: 0px;
+}
+
+.wrapper {
+  width: 1280px;
+  margin: 0 auto;
+  font-family: 'microsoft PhagsPa';
+}
+
+header {
+  position: relative;
+  height: 450px;
+  font-family: 'Lucida sans';
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 300px repeat(2, minmax(490px, 1fr));
+  grid-template-rows: repeat(3, minmax(150px, 1fr));
+  grid-template-areas:
+    'home img img'
+    'work img img'
+    'curi img img';
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: #800000;
+}
+
+.img {
+  grid-area: img;
+}
+
+.home {
+  color: #000000;
+  line-height: 6em;
+  width: 300px;
+  height: 150px;
+  grid-area: home;
+  background-color: #fff31c;
+}
+
+@keyframes home {
+  from {
+    background-color: #fff31c;
+    color: rgb(0, 0, 0);
+  }
+  50% {
+    background-color: #000000;
+    color: #fff;
+  }
+  to {
+    background-color: #fff31c;
+    color: rgb(0, 0, 0);
+  }
+}
+
+.home a:visited {
+  color: rgb(0, 0, 0);
+}
+
+.home:hover {
+  animation: home 1s linear;
+}
+
+.work {
+  color: #fff;
+  line-height: 6em;
+  width: 300px;
+  height: 150px;
+  grid-area: work;
+  background-color: #2d2987;
+}
+
+@keyframes work {
+  from {
+    background-color: #2d2987;
+  }
+  50% {
+    background-color: #000000;
+    color: #fff;
+  }
+  to {
+    background-color: #2d2987;
+  }
+}
+
+.work a:visited {
+  color: rgb(255, 255, 255);
+}
+
+.work:hover {
+  animation: work 1s linear;
+}
+
+.curri {
+  color: rgb(0, 0, 0);
+  line-height: 6em;
+  width: 300px;
+  height: 150px;
+  grid-area: curi;
+  background-color: #90c041;
+}
+
+@keyframes curri {
+  from {
+    background-color: #90c041;
+  }
+  50% {
+    background-color: #000000;
+    color: #fff;
+  }
+  to {
+    background-color: #90c041;
+  }
+}
+
+.curri a:visited {
+  color: rgb(0, 0, 0);
+}
+
+.curri:hover {
+  animation: curri 1s linear;
+}
+
+.contact {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  text-align: center;
+  border: 0px;
+  padding: 5px;
+  color: #fff;
+  width: 150px;
+  background-color: #d33523;
+}
+
+.contact a:visited {
+  color: rgb(255, 255, 255);
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.page {
+  background-color: #fff;
+}
+
+.page-content {
+  gap: 50px;
+  background-color: #fff;
+  padding: 50px 0px 100px 0px;
+}
+
+.title {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: #3a3939;
+}
+
+.title H1 {
+  padding: 0px 30px;
+  margin-bottom: -20px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #efeded;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+}
+
+table td {
+  padding: 10px;
+}
+
+tr > td {
+  padding-right: 20px;
+  text-align: right;
+}
+
+tr td:last-child {
+  text-align: left;
+}
+
+input[type='text'] {
+  width: 90%;
+}
+
+input[type='email'] {
+  width: 90%;
+}
+
+input[type='checkbox'] {
+  text-align: center;
+}
+
+.page-content form {
+  margin: 0px auto;
+  width: 500px;
+}
+
+fieldset {
+  background-color: #f1f1f1;
+}
+
+legend {
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+}
